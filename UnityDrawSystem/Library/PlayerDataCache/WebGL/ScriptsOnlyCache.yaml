@@ -36,21 +36,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9796}
+      Script: {instanceID: 9674}
     - Class: 114
-      Script: {instanceID: 9944}
+      Script: {instanceID: 9702}
     - Class: 114
-      Script: {instanceID: 9984}
+      Script: {instanceID: 9824}
     - Class: 114
-      Script: {instanceID: 10350}
+      Script: {instanceID: 9864}
     - Class: 114
-      Script: {instanceID: 10684}
+      Script: {instanceID: 10230}
     - Class: 114
-      Script: {instanceID: 11124}
+      Script: {instanceID: 10564}
     - Class: 114
-      Script: {instanceID: 11464}
+      Script: {instanceID: 11004}
     - Class: 114
-      Script: {instanceID: 13106}
+      Script: {instanceID: 11344}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -78,6 +78,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: 736f44a2cd6758cb819df0397073c203
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DrawSystem
   - hash:
       serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
@@ -480,12 +486,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 736f44a2cd6758cb819df0397073c203
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DrawSystem
   platform: 20
   scenePathNames:
   - "Assets/\u96A8\u6A5F\u62BD\u724C\u7CFB\u7D71.unity"
