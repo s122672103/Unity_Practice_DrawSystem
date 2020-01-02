@@ -32,27 +32,55 @@ public class RandomSystem : MonoBehaviour
        
     }
 
-
-
     public IEnumerator StartRandom()
     {
         btn.interactable = false;
         for (int j = 0; j < count; j++)
         {
 
-        for (int i = 0; i < sprites.Length; i++)
-        {
-            imgSkill.sprite = sprites[i];
-            aud.PlayOneShot(soundRandom, 1f);
-            yield return new WaitForSeconds(speed);
+            for (int i = 0; i < sprites.Length; i++)
+            {
+                imgSkill.sprite = sprites[i];
+                aud.PlayOneShot(soundRandom, 1f);
+                yield return new WaitForSeconds(speed);
 
+            }
         }
-        }
-        randomIndex = Random.Range(0,sprites.Length);
+        randomIndex = Random.Range(0, sprites.Length);
         imgSkill.sprite = sprites[randomIndex];
         aud.PlayOneShot(soundStop, 1f);
         btn.interactable = true;
-    
+
     }
 
+    public void TheRandom()
+    {
+        StartCoroutine("StartRandom");
+    }
+
+    /*public void SRIE()
+    {
+        btn.interactable = false;
+
+        for (int j = 0; j < count; j++)
+        {
+            for (int i = 0; i < sprites.Length; i++)
+            {
+                StartCoroutine(TheRandom(i));
+                //TheRandom(i);
+            }
+        }
+
+        randomIndex = Random.Range(0, sprites.Length);
+        imgSkill.sprite = sprites[randomIndex];
+        aud.PlayOneShot(soundStop, 1f);
+        btn.interactable = true;
+    }
+
+    public IEnumerator TheRandom( int i)
+    {
+        imgSkill.sprite = sprites[i];
+        aud.PlayOneShot(soundRandom, 1f);
+        yield return new WaitForSeconds(speed);
+    }*/
 }
